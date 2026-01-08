@@ -12,7 +12,7 @@ resource "azurerm_service_plan" "service_plan" {
   location            = var.rg_location
   resource_group_name = var.rg_name
 
-  sku_name = "${var.app_service_plan_sku_tier}_${var.app_service_plan_sku_size}"
+  sku_name = "${var.app_service_plan_sku_size}"
   os_type  = "Windows"
 }
 
